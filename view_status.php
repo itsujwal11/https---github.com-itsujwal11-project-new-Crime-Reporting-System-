@@ -1,90 +1,111 @@
-<?php
- 
-    function getReportStatuses() {
-     
-        return array(
-            array('complaint_id' => 1, 'status' => 'Received'),
-            array('complaint_id' => 2, 'status' => 'In Progress'),
-            array('complaint_id' => 3, 'status' => 'Closed'),
-        );
-    }
-
- 
-    $reportStatuses = getReportStatuses();
-?>
-
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Status</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="view_status.css">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="dashboard.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title>
 </head>
 <body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="images/logo.png" alt="">
+            </div>
 
-<div class="wrapper">
-  
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Crime Reporting System (CRS)</h3>
+            <span class="logo_name">SafeNepal</span>
         </div>
 
-        <ul class="list-unstyled components">
-            <li>
-                <a href="report_form.php">Report Crime</a>
-            </li>
-            <li class="active">
-                <a href="view_status.php">View Status</a>
-            </li>
-            <li>
-                <a href="#">Anonymous Report</a>
-            </li>
-            <li>
-                <a href="#">Communication Platform</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            <li>
-            <a href="home.html">Logout</a>
-        </li>
-        </ul>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="report_form.php">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Report Crime</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">View Status</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Anonymous Report</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Contact us</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="logout.php">
+                    <i class="uil uil-signout"></i>
+                    <span class="logout">Logout</span>
+                </a></li>
 
-        <footer>
-            <p>Copyright © Crime Reporting System (CRS) 2024</p>
-        </footer>
+             
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
     </nav>
 
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
 
-    <div id="content">
-        <h2>Report Status</h2>
       
-        <div class="container">
-            <?php foreach ($reportStatuses as $status): ?>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Complaint ID: <?php echo $status['complaint_id']; ?></h5>
-                        <p class="card-text">Status: <?php echo $status['status']; ?></p>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+            
         </div>
-    </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./dashboard.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-    });
-</script>
+   
 
+              
+               
+               
+             
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+
+    </script>
+    <footer>
+        <h1>hello</h1>
+    </footer>
 </body>
 </html>

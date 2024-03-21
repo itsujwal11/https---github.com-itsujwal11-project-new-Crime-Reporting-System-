@@ -34,7 +34,7 @@
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Report Crime</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="view_status.php">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">View Status</span>
                 </a></li>
