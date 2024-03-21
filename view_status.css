@@ -1,83 +1,105 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-#sidebar {
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #cbd8fa;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+    
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+
+
+nav{
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 250px;
-    background: #343a40;
-    color: #fff;
-    transition: all 0.3s;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    border-right: 1px solid var(--border-color);
+    transition: var(--tran-05);
+}
+nav.close{
+    width: 73px;
+}
+nav .logo-name{
+    display: flex;
+    align-items: center;
+}
+nav .logo-image{
+    display: flex;
+    justify-content: center;
+    min-width: 45px;
 }
 
-#sidebar.active {
-    margin-left: -250px;
+nav .logo-name .logo_name{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 9px;
+ 
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
-    text-align: center;
-    background: #343a40;
+nav .menu-items{
+    margin-top: 40px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #343a40;
+.menu-items li{
+    list-style: none;
 }
-
-#sidebar ul.components li {
-    padding: 10px 20px;
-}
-
-#sidebar ul.components li.active {
-    background-color: #495057;
-}
-
-#sidebar ul.components li a {
-    display: block;
+.menu-items li a{
+    display: flex;
+    align-items: center;
+    height: 50px;
     text-decoration: none;
-    color: #fff;
+    position: relative;
 }
 
-#sidebar ul.components li a:hover {
-    background-color: #495057;
-}
 
-#sidebar footer {
-    position: fixed;
-    bottom: 0;
-    width: 250px;
-    padding: 15px;
-    background-color: #343a40;
-    color: #fff;
+.menu-items li a i{
+    font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-light-color);
 }
-#content {
-    margin-left: 250px;
-    padding: 20px;
-}
-
-/* Report Status */
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.card {
-    background: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
+.menu-items li a .link-name{
     font-size: 18px;
-    margin-bottom: 10px;
+    font-weight: 400;
+    color: var(--black-light-color);    
+    transition: var(--tran-05);
 }
-
-.card-text {
-    font-size: 14px;
-    color: #6c757d;
-    margin-bottom: 0;
+nav.close li a .link-name{
+    opacity: 0;
+    pointer-events: none;
 }

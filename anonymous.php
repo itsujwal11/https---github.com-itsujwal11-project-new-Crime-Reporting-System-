@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="view_status.css">
+    <link rel="stylesheet" href="anonymous.css">
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -34,11 +34,11 @@
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Report Crime</span>
                 </a></li>
-                <li><a href="view_status.php">
+                <li><a href="#">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">View Status</span>
                 </a></li>
-                <li><a href="anonymous.php">
+                <li><a href="#">
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Anonymous Report</span>
                 </a></li>
@@ -67,7 +67,26 @@
             </ul>
         </div>
     </nav>
+    <div class="anonymous-reporting">
+            <div class="title">
+                <i class="uil uil-thumbs-up"></i>
+                <span class="text">Anonymous Reporting</span>
+            </div>
+            <form class="report-form">
+                <label for="report-type">Type of Incident:</label>
+                <select id="report-type" name="report-type">
+                    <option value="assault">Assault</option>
+                    <option value="theft">Theft</option>
+                    <option value="scam">Scam</option>
+                    <option value="vandalism">Vandalism</option>
+                </select>
 
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
 
 
     <script>

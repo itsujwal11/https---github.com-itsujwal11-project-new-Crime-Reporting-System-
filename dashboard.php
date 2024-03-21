@@ -38,7 +38,7 @@
                     <i class="uil uil-chart"></i>
                     <span class="link-name">View Status</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="anonymous.php">
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Anonymous Report</span>
                 </a></li>

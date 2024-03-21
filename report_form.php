@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="report_form.css">
+    <link rel="stylesheet" href="anonymous.css">
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -26,15 +26,15 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="dashboard.php">
+                <li><a href="#">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dashboard</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="report_form.php">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Report Crime</span>
                 </a></li>
-                <li><a href="view_status.php">
+                <li><a href="#">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">View Status</span>
                 </a></li>
@@ -67,40 +67,58 @@
             </ul>
         </div>
     </nav>
+    <div class="anonymous-reporting">
+    <div class="title">
+        <i class="uil uil-thumbs-up"></i>
+        <span class="text">Report Your Problem</span>
+    </div>
+    <form class="report-form">
+        <label for="report-type">Type of Incident:</label>
+        <select id="report-type" name="report-type">
+            <option value="assault">Assault</option>
+            <option value="theft">Theft</option>
+            <option value="scam">Scam</option>
+            <option value="vandalism">Vandalism</option>
+        </select>
 
-   
- 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
 
-<div class="form-container">
-  <form>
-    <label for="report-type">Crime:</label>
-    <select id="report-type" name="report-type">
-    <option value="theft">Assault</option>
-    <option value="theft">Theft</option>
-    <option value="theft">Scam</option>
-    <option value="theft">Vandalism</option>
-    </select><br>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br>
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address"><br>
-    <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" name="phone"><br> <br>
-    <input type="submit" value="Submit">
-  </form>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <button type="submit">Submit Report</button>
+    </form>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./dashboard.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-    });
-</script>
- 
+
+
+    <script>
+        const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+
+    </script>
+    <footer>
+        <h1>hello</h1>
+    </footer>
 </body>
 </html>
