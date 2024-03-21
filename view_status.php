@@ -26,9 +26,9 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="dashboard.php">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
+                    <span class="link-name">Dashboard</span>
                 </a></li>
                 <li><a href="report_form.php">
                     <i class="uil uil-files-landscapes"></i>
@@ -68,7 +68,83 @@
         </div>
     </nav>
 
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
 
+      
+            
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Status </span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="fa-sharp fa-light fa-user"></i>
+                        <span class="text">Total Case Reported</span>
+                        <span class="number">570</span>
+                    </div>
+                    <div class="box box2">
+                      
+                        <span class="text">Total Cases Solved</span>
+                        <span class="number">209</span>
+                    </div>
+                    <div class="box box3">
+                       
+                        <span class="text">Total Pending Cases</span>
+                        <span class="number">358</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-status">
+    <h2>View Status</h2>
+    <div class="case-details">
+        <p><strong>Case ID:</strong> ABC123456</p>
+        <p><strong>Status:</strong> Under Investigation</p>
+        <p><strong>Last Updated:</strong> March 21, 2024, 10:30 AM</p>
+        <p><strong>Assigned Officer:</strong> Officer Smith</p>
+    </div>
+    <div class="status-updates">
+        <h3>Status Updates</h3>
+        <ul>
+            <li>
+                <p><strong>March 21, 2024, 10:30 AM:</strong> Case reported.</p>
+            </li>
+            <li>
+                <p><strong>March 22, 2024, 2:00 PM:</strong> Case assigned to Officer Smith for investigation.</p>
+            </li>
+            <li>
+                <p><strong>March 24, 2024, 11:45 AM:</strong> Initial evidence collected.</p>
+            </li>
+            <!-- Additional status updates -->
+        </ul>
+    </div>
+    <div class="additional-details">
+        <h3>Additional Details</h3>
+        <p>Additional information or notes related to the case...</p>
+    </div>
+    <div class="action-options">
+        <h3>Action Options</h3>
+        <button>Contact Support</button>
+        <button>Submit Additional Information</button>
+        <!-- Additional actionable options -->
+    </div>
+</div>
+
+
+              
+               
+               
+             
+            </div>
+        </div>
+    </section>
 
     <script>
         const body = document.querySelector("body"),
@@ -88,8 +164,6 @@ sidebarToggle.addEventListener("click", () => {
 })
 
     </script>
-    <footer>
-        <h1>hello</h1>
-    </footer>
+   
 </body>
 </html>
