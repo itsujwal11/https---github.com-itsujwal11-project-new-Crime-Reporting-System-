@@ -72,15 +72,15 @@
             <h2>Contact Information</h2>
             <div class="info">
                 <i class="uil uil-map-marker"></i>
-                <p>123 Street Name, City, Country</p>
+                <p>Durbar Marg, Kathmandu, Nepal</p>
             </div>
             <div class="info">
                 <i class="uil uil-envelope"></i>
-                <p>example@example.com</p>
+                <p>nepalpolice@gmail.com</p>
             </div>
             <div class="info">
                 <i class="uil uil-phone"></i>
-                <p>+1234567890</p>
+                <p>100</p>
             </div>
         </div>
     </section>
