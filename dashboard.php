@@ -28,7 +28,7 @@
             <ul class="nav-links">
                 <li><a href="#">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
+                    <span class="link-name">Dashboard</span>
                 </a></li>
                 <li><a href="report_form.php">
                     <i class="uil uil-files-landscapes"></i>
@@ -42,14 +42,11 @@
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Anonymous Report</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="contact.php">
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Contact us</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">share</span>
-                </a></li>
+             
             </ul>
             
             <ul class="logout-mode">

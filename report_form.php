@@ -42,14 +42,11 @@
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Anonymous Report</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="contact.php">
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Contact us</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">share</span>
-                </a></li>
+          
             </ul>
             
             <ul class="logout-mode">
@@ -82,16 +79,16 @@
         </select>
 
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
 
         <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone">
+        <input type="number" id="phone" name="phone"required>
 
         <label for="address">Address:</label>
-        <input type="text" id="address" name="address">
+        <input type="text" id="address" name="address"required>
 
         <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="4"></textarea>
+        <textarea id="description" name="description" rows="4"required></textarea>
 
         <button type="submit">Submit Report</button>
     </form>

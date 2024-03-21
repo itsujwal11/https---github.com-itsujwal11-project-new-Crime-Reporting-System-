@@ -58,12 +58,10 @@
             <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
-                    <div class="alert-close">
-                        <span class="fa fa-close"></span>
-                    </div>
+                    
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="images/image.svg" alt="">
+                            <img src="images/Nepal_Police_logo-removebg-preview.png" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">

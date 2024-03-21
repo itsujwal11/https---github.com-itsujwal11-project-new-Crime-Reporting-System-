@@ -28,7 +28,7 @@
             <ul class="nav-links">
                 <li><a href="dashboard.php">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
+                    <span class="link-name">Dashboard</span>
                 </a></li>
                 <li><a href="report_form.php">
                     <i class="uil uil-files-landscapes"></i>
@@ -38,18 +38,15 @@
                     <i class="uil uil-chart"></i>
                     <span class="link-name">View Status</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="anonymous.php">
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Anonymous Report</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="contact.php">
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Contact us</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">share</span>
-                </a></li>
+            
             </ul>
             
             <ul class="logout-mode">
@@ -82,7 +79,7 @@
                 </select>
 
                 <label for="description">Description:</label>
-                <textarea id="description" name="description" rows="4"></textarea>
+                <textarea id="description" name="description" rows="4"required ></textarea>
 
                 <button type="submit">Submit Report</button>
             </form>
