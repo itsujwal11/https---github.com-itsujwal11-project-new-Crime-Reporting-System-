@@ -75,10 +75,7 @@
 
         <div class="dash-content">
             <div class="overview">
-                <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Status </span>
-                </div>
+              
 
                 <div class="boxes">
                     <div class="box box1">

@@ -44,6 +44,7 @@ nav{
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
 }
+
 nav.close{
     width: 73px;
 }
@@ -116,7 +117,7 @@ nav.close li a .link-name{
 .dashboard{
     position: relative;
     left: 250px;
-    background-color: var(--panel-color);
+    background-color:rgb(255, 255, 255);
     min-height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
@@ -183,6 +184,7 @@ nav.close ~ .dashboard .top{
 }
 .dashboard .dash-content{
     padding-top: 50px;
+    background-color: #cbd8fa;
 }
 .dash-content .title{
     display: flex;
@@ -208,10 +210,12 @@ nav.close ~ .dashboard .top{
     margin-left: 10px;
 }
 .dash-content .boxes{
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 .dash-content .boxes .box{
     display: flex;
@@ -252,11 +256,12 @@ nav.close ~ .dashboard .top{
 }
 
 .view-status {
-    background: linear-gradient(135deg, #e6f3ff, #f9f9f9);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgb(214, 210, 210);
+    padding: 30px;
+
+    border-radius: 1px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+margin-top: 20px;
 }
 
 /* Style the heading */

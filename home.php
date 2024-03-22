@@ -96,7 +96,7 @@
     <div class="footer-content">
         <img src="images/crime.jpeg" alt="Aaron Lowe Coaching logo">
         <p> Our rights can be curtailed in the interest of public safety</p>
-        <a href="tel:100">Call us: 100</a> | Email us: nepalpolice@gmail.com <a href="nepalpolice@gmail.com"></a></a>
+        <a href="tel:100">Call us: 100</a> | Email us: crimereportingsystemNepal@gmail.com <a href="crimereportingsystemNepal@gmail.com"></a></a>
       </div>
       <div class="footer-copyright">
         <p>&copy; Copyright © Crime Reporting System (CRS) 2024</p>

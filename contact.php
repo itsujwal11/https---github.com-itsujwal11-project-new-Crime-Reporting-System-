@@ -76,7 +76,7 @@
             </div>
             <div class="info">
                 <i class="uil uil-envelope"></i>
-                <p>nepalpolice@gmail.com</p>
+                <p>crimereportingsystemNepal@gmail.com</p>
             </div>
             <div class="info">
                 <i class="uil uil-phone"></i>

@@ -9,7 +9,7 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #678bf0;
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
@@ -116,7 +116,7 @@ nav.close li a .link-name{
 .dashboard{
     position: relative;
     left: 250px;
-    background-color: var(--panel-color);
+    background-color: #cbd8fa;
     min-height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
@@ -187,7 +187,8 @@ nav.close ~ .dashboard .top{
 .dash-content .title{
     display: flex;
     align-items: center;
-    margin: 60px 0 30px 0;
+    margin: 40px 0 80px 5px;
+    
 }
 .dash-content .title i{
     position: relative;
@@ -212,6 +213,7 @@ nav.close ~ .dashboard .top{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+margin-top: -50px;
 }
 .dash-content .boxes .box{
     display: flex;
