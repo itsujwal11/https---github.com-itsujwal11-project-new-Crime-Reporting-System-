@@ -108,11 +108,11 @@ nav.close li a .link-name{
 .anonymous-reporting {
   background-color: #fff;
   border-radius: 12px;
-  padding: 100px;
+  padding: 90px;
   width: 50%;
   margin: auto;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
